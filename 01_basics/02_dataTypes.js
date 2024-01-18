@@ -1,4 +1,4 @@
-"use strict";
+"use strict"; //strict code to compline new js
 //number => 2^53
 //string => ""
 //boolean => true/false
