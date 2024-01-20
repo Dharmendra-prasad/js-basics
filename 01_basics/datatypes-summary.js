@@ -46,3 +46,21 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
+
+//=============================Stack and Heap Memmory====================
+
+// Stack(Primitive) = In Stack memmory direct value is stored
+// Heap(Non-Primitive) = In Heap memmory reference is stored
+
+//example of heap how it refere the reference
+
+let userOne = {
+    name : "Dharemendra",
+    age : 35
+}
+
+let userTwo = userOne
+userTwo.name = "Dharmendra Prasad"
+
+console.log(userOne.name); //Dharmendra
+console.log(userTwo.name); //Dharmendra Prasad
