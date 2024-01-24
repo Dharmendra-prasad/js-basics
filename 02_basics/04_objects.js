@@ -64,19 +64,19 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course //Destructuring Object keys
 
 // console.log(courseInstructor);
 console.log(instructor);
 
 // {
 //     "name": "hitesh",
-//     "coursename": "js in hindi",
+//     "coursename": "js in hindi",  //api json object example
 //     "price": "free"
 // }
 
 [
     {},
-    {},
+    {},   //json object example
     {}
 ]
