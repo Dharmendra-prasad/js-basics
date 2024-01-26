@@ -14,7 +14,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach(printMe)
 
-// coding.forEach( (item, index, arr)=> {
+// coding.forEach( (item, index, arr)=> {  //foreach can return value, index and full array and this is a way to write it because it return a call back function
 //     console.log(item, index, arr);
 // } )
 

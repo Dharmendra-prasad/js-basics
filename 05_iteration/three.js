@@ -5,7 +5,7 @@
 
 const arr = [1, 2, 3, 4, 5]
 
-for (const num of arr) {
+for (const num of arr) {       //automatically iterates
     //console.log(num);
 }
 
@@ -16,7 +16,7 @@ for (const greet of greetings) {
 
 // Maps
 
-const map = new Map()
+const map = new Map()   //map is like Object but it hold only unique keys and not iterable with for in loop
 map.set('IN', "India")
 map.set('USA', "United States of America")
 map.set('Fr', "France")
@@ -26,7 +26,7 @@ map.set('IN', "India")
 // console.log(map);
 
 for (const [key, value] of map) {
-    // console.log(key, ':-', value);
+    // console.log(key, ':-', value);  //iterating map with for of loop
 }
 
 const myObject = {
@@ -34,7 +34,7 @@ const myObject = {
     game2: 'Spiderman'
 }
 
-// for (const [key, value] of myObject) {
-//     console.log(key, ':-', value);
+for (const [key, value] of myObject) {  //this will through error because object can not be iterable by for of but can be iterable by for in loop
+    console.log(key, ':-', value);
     
-// }
+}
