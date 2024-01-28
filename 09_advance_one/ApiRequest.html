@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card">
+        <img src="#" alt="" width="100px" height="100px" id="image">
+        <hr>
+
+        <h2 class="">Name: <span class="name"></span> </h2>
+        <h3 class="">GitHub-Follower: <span class="gitFollower"></span> </h3>
+    </div>
+</body>
+<script>
+
+    const img = document.querySelector('#image')
+    const name = document.querySelector('.name')
+    const gitFollower = document.querySelector('.gitFollower')
+    const xhr = new XMLHttpRequest();
+    const url = 'https://api.github.com/users/Dharmendra-prasad'
+    xhr.open('GET', url)
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            console.log(data)
+            img.src = data.avatar_url
+            name.innerHTML = data.name
+            gitFollower.innerHTML = data.followers
+        }
+    }
+    xhr.send()
+
+
+    //console.log(data)
+</script>
+
+</html>
